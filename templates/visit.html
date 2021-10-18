@@ -1,0 +1,45 @@
+{%extends "layout.html"%}
+{%block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: beige;">
+    <h2>{{name}} welcome to {{place}}!</h2>
+    
+    {% if place == "Ernakulam" %}
+    <h4>What to see in {{place}} </h4>
+    <ul style="padding-left: 20px;">
+        <li>Paradesi Synagogue</li>
+        <li>Matanchery Palace</li>
+        <li>Cherai Beach</li>
+        <li>Hill Palace Museum and many more..</li><br>
+        <img src="../static/image/fortkochi.png" height="20%" width="20%">
+    </ul>
+    {% elif place == "Thrissur" %}
+    <h4>What to see in {{place}} </h4>
+    <ul style="padding-left: 20px;">
+        <li>Punnathur Kotta</li>
+        <li>Vadakkunathan Temple</li>
+        <li>Athirappilly Waterfalls</li>
+        <li>Kerala Kalamandalam and many more..</li><br>
+        <img src="../static/image/2.png" height="20%" width="20%">
+    </ul>
+    {% elif place == "Idukki" %}
+    <h4>What to see in {{place}} </h4>
+    <ul style="padding-left: 20px;">
+        <li>Eravikulam National Park</li>
+        <li>Mattupetty Dam</li>
+        <li>Munnar</li>
+        <li>Meesapulimala and many more..</li><br>
+        <img src="../static/image/munnar.png" height="20%" width="20%">
+    </ul>
+    {% endif %}
+
+</body>
+</html>
+{%endblock%}

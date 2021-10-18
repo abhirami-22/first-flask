@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital@0;1&display=swap" rel="stylesheet">
+    <title>Kerala Tourism</title>
+</head>
+<body>
+        <header>
+            <div class="nav">
+                <ul>
+                    <li><strong><a href="{{url_for('home')}}" class="nav-link">KERALA TOURISM </a></strong></li>
+                  <div class="topnav-right">
+                    <li><a href="{{url_for('home')}}" class="nav-link">Home</a></li>
+                    <li><a href="{{url_for('places')}}" class="nav-link">Places to Visit</a></li>
+                    <li><a href="{{url_for('about')}}" class="nav-link">About</a></li>
+                  </div>
+
+                </ul>
+            </div>
+        </header>
+        <div class="container">
+            {%block content%}
+            {%endblock%}
+        </div>
+          
+</body>
+</html>

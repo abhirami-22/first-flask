@@ -1,0 +1,85 @@
+{%extends "layout.html"%}
+{%block content%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kerala</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/css/style.css">
+    </head>
+    <body style="background-color: lightgoldenrodyellow;">
+        <div class="container">
+          <div class="head">
+            <h1>Places to Visit</h1>
+          </div>
+            <div class="stylediv" style="color: green;">
+                Create beautiful memories to cherish and footprints for others to follow.
+            </div>
+            <div class="gallery">
+                  <img src="../static/image/munnar.png" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">Munnar</div>
+              </div>
+              
+              <div class="gallery">
+                  <img src="../static/image/fortkochi.png" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc">Fort Kochi</div>
+              </div>
+              
+              <div class="gallery">
+                  <img src="../static/image/vypin.png" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc">Vypin</div>
+              </div>
+
+              <div class="gallery">
+                <img src="../static/image/kozhikode.png" alt="Cinque Terre" width="600" height="400">
+              </a>
+              <div class="desc">Kozhikode</div>
+            </div>
+            
+            <div class="gallery">
+                <img src="../static/image/2.png" alt="Forest" width="600" height="400">
+              </a>
+              <div class="desc">Thrissur</div>
+            </div>
+            
+            <div class="gallery">
+                <img src="../static/image/thekkady.png" alt="Northern Lights" width="600" height="400">
+              </a>
+              <div class="desc">Thekkady</div>
+            </div>
+            <br><br>
+        <div class="head">
+          <h1>Decide your destination</h1>
+        </div>
+          <div>
+            <form action="visit" method="POST">
+              <table class="login">
+                <tr>
+                <td>Name </td><td><input type="text" name="user"></td>
+                </tr>
+                <tr>
+                <td>Place of visit </td>
+                <td>
+                  <select name="userplace" id="cars">
+                    <option value="Ernakulam">Ernakulam</option>
+                    <option value="Thrissur">Thrissur</option>
+                    <option value="Idukki">Idukki</option>
+                  </select>
+                </td>
+                </tr>
+                <tr>
+                <td><br><input type="submit" value="CHECK"></td>
+                </tr>
+              </table>
+            </form>
+          </div>
+          </div>
+    </body>
+</html>
+{%endblock%}
